@@ -22,7 +22,7 @@ ALTER COLUMN start_station_id NVARCHAR(255);
 /* Consolidating the data post-conversion of data types.
 */
 
-SELECT * INTO Cyclistic
+SELECT * INTO Cyclist
 FROM (
     SELECT * FROM [PortfolioProject].[dbo].[202201]
     UNION ALL
