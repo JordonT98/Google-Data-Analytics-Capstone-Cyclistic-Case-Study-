@@ -149,7 +149,7 @@ GROUP BY
 --Total Rides at Start Station
 
 SELECT 
-    start_station_name,
+    start_station_name,start_lat,start_lng,
     COUNT(*) AS total_rides
 FROM 
     PortFolioProject.dbo.Cyclist
@@ -157,7 +157,7 @@ WHERE
     member_casual IS NOT NULL
     AND start_station_name IS NOT NULL
 GROUP BY 
-    start_station_name;
+    start_station_name,start_lat,start_lng
 
 
 
