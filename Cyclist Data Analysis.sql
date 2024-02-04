@@ -13,36 +13,41 @@ FROM PortFolioProject.dbo.Cyclist
 GROUP BY member_casual;
 
 
--- "Average Ride Length Comparison for Members and Casual Cyclists Over the Week"
+-- "Comparative Analysis: Weekly Ride Counts for Members and Casual Cyclists"
 
 SELECT 
     member_casual,
-    DATEPART(WEEKDAY, start_dates) AS day_of_week,
-    AVG(DATEDIFF(SECOND, '00:00:00', ride_length)) AS avg_ride_length_hour
+    DATEPART(WEEKDAY, start_dates) AS weekday_number,
+    COUNT(ride_id) AS number_of_rides
 FROM 
-    PortFolioProject.dbo.Cyclist
+    PortFolioProject.dbo.cyclist
 WHERE 
-    DATEDIFF(SECOND, '00:00:00', ride_length) <= 54000
+    member_casual IS NOT NULL
 GROUP BY 
     member_casual,
     DATEPART(WEEKDAY, start_dates)
-	order by 2;
+	Order by 2;
 
 
--- "Maximum Ride Length Comparison for Members and Casual Cyclists Over the Week"
+-- "Comparison Of Weekly Riding Hours for Members and Casual Cyclists"
 
 SELECT 
+    CASE 
+        WHEN DATEPART(HOUR, start_times) = 0 THEN '12 AM' -- Change '0 AM' to '12 AM'
+        WHEN DATEPART(HOUR, start_times) < 12 THEN CONCAT(DATEPART(HOUR, start_times), ' AM')
+        WHEN DATEPART(HOUR, start_times) = 12 THEN '12 PM' -- Change '0 PM' to '12 PM'
+        ELSE CONCAT(DATEPART(HOUR, start_times) - 12, ' PM')
+    END AS hour_of_day,
     member_casual,
-    DATEPART(WEEKDAY, start_dates) AS day_of_week,
-    Max(DATEDIFF(SECOND, '00:00:00', ride_length)) AS max_ride_length_hours
+    COUNT(ride_id) AS number_of_rides
 FROM 
-    PortFolioProject.dbo.Cyclist
+    PortFolioProject.dbo.cyclist
 WHERE 
-    DATEDIFF(SECOND, '00:00:00', ride_length) <= 54000
+    member_casual IS NOT NULL
 GROUP BY 
-    member_casual,
-    DATEPART(WEEKDAY, start_dates)
-	order by 2;
+    DATEPART(HOUR, start_times),
+    member_casual
+ORDER BY 1;
 
 
 -- "Identification of the Top 3 Most Utilized Bicycles by Member Type"
