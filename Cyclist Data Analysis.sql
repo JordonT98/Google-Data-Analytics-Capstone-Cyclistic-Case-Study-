@@ -134,7 +134,7 @@ Order by
 --Total Rides at End Station
 
 SELECT 
-    end_station_name,
+    end_station_name,end_lat,end_lng,
     COUNT(*) AS total_rides
 FROM 
     PortFolioProject.dbo.Cyclist
@@ -142,7 +142,7 @@ WHERE
     member_casual IS NOT NULL
     AND end_station_name IS NOT NULL
 GROUP BY 
-    end_station_name;
+    end_station_name,end_lat,end_lng
 
 
 
