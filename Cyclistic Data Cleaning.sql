@@ -116,17 +116,6 @@ SET day_of_week = DATEPART(WEEKDAY, start_dates);
 Select top 1000 ride_length 
 From PortfolioProject.dbo.Cyclist
 
-## -- Identifying Data Anomalies for Rides Exceeding 15 Hours (540,000 Seconds)
-
-
-SELECT *
-FROM PortfolioProject.dbo.Cyclist
-WHERE DATEDIFF(SECOND, '00:00:00', ride_length) > 54000;
-
---Total number of rows = 26576
-
-
-
 ## -- Identifying Null Values 
 
 SELECT *
