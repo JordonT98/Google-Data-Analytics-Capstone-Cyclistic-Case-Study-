@@ -88,10 +88,6 @@ In order to effectively communicate my insights with stakeholders, I developed a
 ## Act
 As requested by the director, here are the following marketing strategies that I recommend:
 
-Create marketing adverts for casual riders with weekend packages to touristic destinations tie-ups in and around the city for a specific period. Rides taken during this period can be used to discount the membership amount for a maximum trial period of two months before helping the casual rider become a full-time member of Cyclistic.
-Create marketing packages that use the number of rides taken by casual riders to avail gift cards to sporting goods, converting their rides to a point-based system to obtains discounts on apparel and related gear before shifting to a two-month membership trial period.
-Could also push for trial memberships based on the number of rides taken by casual riders, which if availed during a promotional week, they can sign up for memberships at discounted prices.
-Link the number of rides taken at the top 5 busiest stations to offer further discounts on memberships. This can be done with the point-based system and the ID of the starting station, to come up with marketing strategies like "5 continuous rides at Station X will give you a discounted price on a two-month trial period of the membership".
 - Concentrate advertisement efforts for casual rides in coastal regions, aligning with the locations of preferred stations during peak hours around 5 pm, leveraging high usage trends during this timeframe.
 - Introduce a special membership package tailored for weekend usage, capitalizing on the increased prominence of casual users during this period, thereby enhancing membership acquisition potential.
 - Capitalize on heightened bike usage during the summer months by offering membership trials and discounts, strategically incentivizing potential users to transition to membership status.
