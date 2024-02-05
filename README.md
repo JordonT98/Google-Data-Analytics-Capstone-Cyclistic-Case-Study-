@@ -31,7 +31,7 @@ In this stage, we will conduct data cleaning to ensure accuracy, completeness, a
 - Introducing another column to determine the specific day of the week.
 - Implementing columns to distinguish start dates and end dates.
 - Establishing a column to segregate start times and end times.
--Discovered there was lots of Null data in the columns.
+- Discovered there was lots of Null data in the columns.
 
 
 ## Analyze 
