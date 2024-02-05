@@ -50,7 +50,7 @@ Upon observation, it became evident that member riders predominantly utilized Cy
 
 ![image](https://github.com/JordonT98/Google-Data-Analytics-Capstone-Cyclistic-Case-Study-/assets/158506708/2772e2a6-1d76-47ae-8b68-2c26e326e08f)
 
-Seeking to unravel additional insights from the dataset, I delved into the preferences regarding bike types among Cyclistic users during the specified period. Notably, a substantial proportion of member riders favoured classic bikes (1.7 million) and electric bikes (1.6 million), with negligible utilization of docked bikes. Conversely, casual riders displayed a preference for electric bikes (1.2 million) and classic bikes (800k), while a smaller cohort opted for docked bikes (177k). 
+Seeking to unravel additional insights from the dataset, I delved into the preferences regarding bike types among Cyclistic users during the specified period. Notably, a substantial proportion of member riders favoured classic bikes (1.7 million) and electric bikes (1.6 million), with negligible utilization of docked bikes. Conversely, casual riders displayed a preference for electric bikes (1.2 million) and classic bikes (891k), while a smaller cohort opted for docked bikes (177k). 
 
 
 
